@@ -1,0 +1,71 @@
+.form-input {
+  margin-bottom: 25px;
+  width: 100%;
+  border-bottom: 1px solid #c2c2c2;
+}
+.form-input:hover {
+  border-bottom: 1px solid #7e7e7e;
+}
+.form-input:focus-within {
+  border-bottom: 2px solid #0076da;
+  margin-bottom: 24px
+}
+
+  .input-error {
+    display: none;
+    margin: 0 0 25px 0;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid #df0000;
+    border-radius: 5px;
+    background-color: #fcc9c9;
+    color: #df0000;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    background-color: transparent;
+  }
+  input[type="password"], #user-pass, #pass-conf {
+    font-family: 'Lato', sans-serif;
+    width: 95%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+  }
+
+  .show-hide-btn {
+    background: url('http://localhost:3000/img/auth/hidden.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor:pointer;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border: none;
+  }
+
+  #user-name-requirements {
+    display: none;
+  }
+
+    #user-name-requirements-list {
+      padding-left: 20px;
+      color: #7e7e7e;
+    }
+
+  #user-pass-requirements {
+    display: none;
+  }
+
+    #user-pass-requirements-list {
+      padding-left: 20px;
+      color: #7e7e7e;
+    }

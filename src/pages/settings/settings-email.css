@@ -1,0 +1,11 @@
+#email-settings h1#title::before {
+  content: 'UPDATE YOUR EMAIL ADDRESS';
+}
+
+  #email-settings p#top-paragraph::before {
+    content: 'To change the email address, please follow below steps:';
+  }
+
+#email-settings [name="custom-form"] header p b::before {
+  content: 'Please enter new email address.';
+}

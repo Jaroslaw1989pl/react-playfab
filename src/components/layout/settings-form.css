@@ -1,0 +1,93 @@
+main.settings-form-content {
+  padding-top: 50px;
+  text-align: center;
+  color: #FFF;
+}
+
+  #back-anchor {
+    text-decoration: none;
+    color: #b0b8c2;
+  }
+  #back-anchor:hover {
+    color: #ffffff;
+  }
+
+  main.settings-form-content header {
+
+  }
+
+  .settings-form {
+    min-width: 400px;
+    max-width: 530px;
+    margin: auto;
+    padding: 20px 50px;
+    background-color: #eeebe0;
+    text-align: left;
+    color: #000;
+  }
+
+    #steps-list {
+
+    }
+
+      .step {
+        float: left;
+        margin-right: 20px;
+      }
+
+        .step-icon {
+          float: left;
+          margin-right: 10px;
+        }
+        .step-icon.active {
+          background-color: #5fbe77;
+          border-radius: 50%;
+        }
+
+          .step-icon img {
+            width: 30px;
+            height: auto;
+          }
+
+        .step-content {
+          float: left;
+          padding-top: 4px;
+          padding-bottom: 4px;
+          border-bottom: 1px solid #b0b8c2;
+        }
+        .step-content.active {
+          font-weight: bold;
+        }
+
+    .form-error {
+      margin: 15px 0;
+      padding: 10px;
+      text-align: center;
+      font-size: 15px;
+      border: 1px solid #df0000;
+      border-radius: 5px;
+      background-color: #fcc9c9;
+      color: #df0000;
+    }
+
+      .settings-form-submit-btn {
+        width: 100%;
+        margin: 10px 0;
+        padding: 7px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        border: 2px solid #5fbe77;
+        background-color: #FFF;
+        color: #5fbe77;
+      }
+      .settings-form-submit-btn:hover {
+        cursor: pointer;
+        border: 2px solid #64db82;
+        color: #64db82;
+      }
+      .settings-form-submit-btn:active {
+        border: 2px solid #4b8a5b;
+        color: #4b8a5b;
+      }

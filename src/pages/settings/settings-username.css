@@ -1,0 +1,29 @@
+#username-settings h1#title::before {
+  content: 'UPDATE YOUR USERNAME';
+}
+
+ #username-settings p#top-paragraph::before {
+    content: 'You can change your username displayed on the playfab.pl website. Username change is available once every 14 days.';
+  }
+
+  #username-form-submit-btn {
+    width: 100%;
+    margin: 10px 0;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid #5fbe77;
+    background-color: #FFF;
+    color: #5fbe77;
+  }
+  #username-form-submit-btn:hover {
+    cursor: pointer;
+    border: 2px solid #64db82;
+    color: #64db82;
+  }
+  #username-form-submit-btn:active {
+    border: 2px solid #4b8a5b;
+    color: #4b8a5b;
+  }

@@ -1,0 +1,33 @@
+#reset-password-panel-header h1::before {
+  content: 'Reset your password';
+}
+
+#reset-password-panel-header p::before {
+  content: 'Enter your user account\'s verified email address and you will receive a password reset link.';
+}
+
+  /* #reset-password-panel-header p a::before {
+    content: 'Create an account';
+  } */
+  
+    #reset-password-form-submit-btn {
+      width: 100%;
+      margin: 10px 0;
+      padding: 7px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      border: 2px solid #5fbebe;
+      background-color: #FFF;
+      color: #5fbebe;
+    }
+    #reset-password-form-submit-btn:hover {
+      cursor: pointer;
+      border: 2px solid #64d7db;
+      color: #64d7db;
+    }
+    #reset-password-form-submit-btnn:active {
+      border: 2px solid #4b8a87;
+      color: #4b8a87;
+    }

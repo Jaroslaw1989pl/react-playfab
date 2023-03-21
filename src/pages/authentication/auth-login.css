@@ -1,0 +1,54 @@
+#login-panel-header h1::before {
+  content: 'Sign in';
+}
+
+#login-panel-header p::before {
+  content: 'New user? ';
+}
+
+  #login-panel-header p a::before {
+    content: 'Create an account';
+  }
+
+
+
+#login-form-submit-btn {
+  width: 100%;
+  margin: 10px 0;
+  padding: 7px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid #5fbe77;
+  background-color: #FFF;
+  color: #5fbe77;
+}
+#login-form-submit-btn:hover {
+  cursor: pointer;
+  border: 2px solid #64db82;
+  color: #64db82;
+}
+#login-form-submit-btnn:active {
+  border: 2px solid #4b8a5b;
+  color: #4b8a5b;
+}
+
+/* #login-form-submit-btn {
+  width: 100%;
+  margin: 10px 0;
+  padding: 7px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #5fbe77;
+  color: #FFF;
+}
+#login-form-submit-btn:hover {
+  cursor: pointer;
+  background-color: #64db82;
+}
+#login-form-submit-btn:active {
+  background-color: #4b8a5b;
+} */

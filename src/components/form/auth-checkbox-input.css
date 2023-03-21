@@ -1,0 +1,41 @@
+#img-box {
+  display: grid;
+  grid-template-columns: 100px 100px 100px; 
+  grid-template-rows: 100px 100px 100px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+  .img-input-group {
+
+  }
+  .img-input-group:hover {
+    transform: scale(1.1);
+  }
+
+    input.avatar {
+      position: absolute;
+    }
+
+
+    input.avatar + label {
+      
+    }
+
+        img {
+          width: 100%;
+        }
+
+/* .input-error {
+  display: none;
+  margin: 25px 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  border: 1px solid #df0000;
+  border-radius: 5px;
+  background-color: #fcc9c9;
+  color: #df0000;
+} */

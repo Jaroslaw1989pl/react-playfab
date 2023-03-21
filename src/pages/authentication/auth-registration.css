@@ -1,0 +1,81 @@
+#registration-panel {
+  width: 750px;
+}
+
+  #registration-panel-header h1::before {
+    content: 'Create an account';
+  }
+
+  #registration-panel-header p::before {
+    content: 'Already have an account? ';
+  }
+
+  #registration-panel-header p a::before {
+    content: 'Sign in';
+  }
+
+  #registration-panel form {
+    width: 750px;
+  }
+
+    .form-left {
+      float: left;
+      width: 320px;
+      padding-right: 10px;
+    }
+
+    .form-right {
+      float: left;
+      width: 400px;
+      padding-left: 10px;
+      border-left: 1px solid #c2c2c2;
+    }
+
+      #first-name-input-container {
+        width: 46%;
+        display: inline-block;
+        margin-right: 4%;
+      }
+
+        #first-name-error {
+          width: 174px;
+          margin: 0 0 15px 0;
+        }
+    
+      #last-name-input-container {
+        width: 46%;
+        display: inline-block;
+        margin-left: 4%;
+      }
+
+        #last-name-error {
+          width: 174px;
+          margin: 0 0 15px 0;
+        }
+
+      #user-pass-requirements {
+
+      }
+
+        #user-pass-requirements {
+          
+        }
+
+      #registration-form-submit-btn {
+        width: 100%;
+        margin: 10px 0;
+        padding: 7px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        background-color: #5fbe77;
+        color: #FFF;
+      }
+      #registration-form-submit-btn:hover {
+        cursor: pointer;
+        background-color: #64db82;
+      }
+      #registration-form-submit-btn:active {
+        background-color: #4b8a5b;
+      }

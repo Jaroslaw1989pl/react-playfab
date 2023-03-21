@@ -1,17 +1,25 @@
+// 3rd party components
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+// custom style components
 import './index.css';
+// custom components
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { ServerContextProvider } from './store/server-context';
+import { FlashMessageContextProvider } from './store/flash-message-context';
+import { UserContextProvider } from './store/user-context';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+
+const headerRoot = createRoot(document.getElementById('root'));
+headerRoot.render(
+  <ServerContextProvider>
+    <UserContextProvider>
+      <FlashMessageContextProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </FlashMessageContextProvider>
+    </UserContextProvider>
+  </ServerContextProvider>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

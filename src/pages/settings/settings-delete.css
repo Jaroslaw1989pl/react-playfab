@@ -1,0 +1,12 @@
+#delete-settings h1#title::before {
+  content: 'DELETE YOUR ACCOUNT';
+}
+
+  #delete-settings p#top-paragraph::before {
+    content: 'After your account has been deleted, all your personal data will be lost.\A\ATo delete your profile, please follow below steps:';
+    white-space: pre-wrap;
+  }
+
+#delete-settings [name="custom-form"] header p b::before {
+  content: 'Please confirm your password.';
+}

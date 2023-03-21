@@ -1,0 +1,72 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lato&family=Russo+One&display=swap'); */
+
+/* :root {
+  --avatar-img-heiht: 30px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #313944;
+} */
+
+/* #page-content {
+  width: 90%;
+  margin: auto;
+} */
+
+  #platform-filter {
+    width: 100%;
+    min-width: 500px;
+    margin-top: 40px;
+    background-color: bisque;
+  }
+
+    #platform-filter ul {
+      list-style: none;
+      text-align: right;
+    }
+
+      li.platform-item {
+        display: inline;
+        margin: 0 0 0 10px;
+      }
+      li.platform-item:not(:last-child) {
+        border-right: 2px solid #fff;
+        padding-right: 10px;
+      }
+
+        li.platform-item button {
+          border: none;
+          background-color: transparent;
+          font-size: 100%;
+          color: #fff;
+          padding: 0;
+        }
+
+        li.platform-item button:hover {
+          cursor: pointer;
+          color: #90b8c2;
+        }
+
+  #games-filter {
+    width: 100%;
+    margin-top: 40px;
+    background-color: #e0fffb60;
+  }
+
+    #search-filter {
+      padding: 20px;
+      width: 300px;
+    }
+
+      #search-filter input[type="text"] {
+        background-color: #cdf3da;
+      }
+
+  #games-tiles-container {
+    width: 100%;
+    min-width: 500px;
+    margin-top: 40px;
+    background-color: rgb(87, 209, 209);
+  }
