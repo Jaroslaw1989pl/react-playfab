@@ -43,9 +43,10 @@ class Validator {
   uniqueness(url) {
     return new Promise((resolve, reject) => {
       const xhr = new XMLHttpRequest();
-    
+      
       xhr.onerror = () => reject('Server not responding.');
       xhr.onload = () => {
+
         if (xhr.status === 200 && xhr.readyState === 4) {
           resolve(xhr.responseText);
         } else {

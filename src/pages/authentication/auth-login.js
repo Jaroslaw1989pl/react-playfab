@@ -36,19 +36,19 @@ const LoginPage = () => {
 
     const validator = new Validator();
 
-    try {
-      if (emailInput.value === '' && passInput.value === '') throw 'Please enter your\'s credentials.';
-      else if (emailInput.value === '' || passInput.value === '') throw 'Incorrect user email or password.';
-      else if (!validator.email(emailInput.value)) throw 'Incorrect user email or password.';
-      else {
+    // try {
+    //   if (emailInput.value === '' && passInput.value === '') throw 'Please enter your\'s credentials.';
+    //   else if (emailInput.value === '' || passInput.value === '') throw 'Incorrect user email or password.';
+    //   else if (!validator.email(emailInput.value)) throw 'Incorrect user email or password.';
+    //   else {
         formData.userEmail = emailInput.value;
         formData.userPass = passInput.value;
-      }
-    } catch (error) {
-      errorElement.textContent = error;
-      errorElement.style.display = 'block';
-      isFormValid = false;
-    }
+    //   }
+    // } catch (error) {
+    //   errorElement.textContent = error;
+    //   errorElement.style.display = 'block';
+    //   isFormValid = false;
+    // }
 
     return isFormValid ? formData : null;
   };

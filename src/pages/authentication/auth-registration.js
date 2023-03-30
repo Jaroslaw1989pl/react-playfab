@@ -80,67 +80,63 @@ const RegistrationPage = () => {
     const userPassError = document.getElementById('user-pass-error');
     const passConfError = document.getElementById('pass-conf-error');
 
-    // // avatar validation
-    // if (!avatar) {
-    //   avatarError.style.display = 'block';
-    //   isFormValid = false;
-    // } else {
+    // avatar validation
+    if (!avatar) {
+      avatarError.style.display = 'block';
+      isFormValid = false;
+    } else {
       formData.avatar = avatar;
-    // }
+    }
 
-    // // username validation
-    // try {
-    //   if (!username || username.length === 0) throw 'Please enter your username.';
-    //   else if (!validator.length(username, 3, 24)) throw 'The username should contains between 3 and 24 characters.';
-    //   else if (!validator.alphanumeric(username)) throw 'The username can only contain Latin letters, numbers and underscore.';
-    //   else if (isUsernameUnique === false) throw 'Username already in use.';
-    //   else 
-    formData.username = username;
-    // } catch (error) {
-    //   usernameError.textContent = error;
-    //   usernameError.style.display = 'block';
-    //   isFormValid = false;
-    // }
+    // username validation
+    try {
+      if (!username || username.length === 0) throw 'Please enter your username.';
+      else if (!validator.length(username, 3, 24)) throw 'The username should contains between 3 and 24 characters.';
+      else if (!validator.alphanumeric(username)) throw 'The username can only contain Latin letters, numbers and underscore.';
+      else if (isUsernameUnique === false) throw 'Username already in use.';
+      else formData.username = username;
+    } catch (error) {
+      usernameError.textContent = error;
+      usernameError.style.display = 'block';
+      isFormValid = false;
+    }
 
-    // // email address validation
-    // try {
-    //   if (!userEmail || userEmail.length === 0) throw 'Please enter your email.';
-    //   else if (!validator.email(userEmail)) throw 'Incorrect email address.';
-    //   else if (isUserEmailUnique === false) throw 'Email address already in use.';
-    //   else 
-    formData.userEmail = userEmail;
-    // } catch (error) {
-    //   userEmailError.textContent = error;
-    //   userEmailError.style.display = 'block';
-    //   isFormValid = false;
-    // }
+    // email address validation
+    try {
+      if (!userEmail || userEmail.length === 0) throw 'Please enter your email.';
+      else if (!validator.email(userEmail)) throw 'Incorrect email address.';
+      else if (isUserEmailUnique === false) throw 'Email address already in use.';
+      else formData.userEmail = userEmail;
+    } catch (error) {
+      userEmailError.textContent = error;
+      userEmailError.style.display = 'block';
+      isFormValid = false;
+    }
 
-    // // user password validation
-    // try {
-    //   if (!userPass || userPass.length === 0) throw 'Please enter your password.';
-    //   else if (!validator.length(userPass, 8)) throw 'Password does not match requirements.';
-    //   else if (!validator.upperLowerCase(userPass)) throw 'Password does not match requirements.';
-    //   else if (!validator.numberSymbol(userPass)) throw 'Password does not match requirements.';
-    //   else if (!validator.alphanumeric(userPass)) throw 'Password does not match requirements.';
-    //   else 
-    formData.userPass = userPass;
-    // } catch (error) {
-    //   userPassError.textContent = error;
-    //   userPassError.style.display = 'block';
-    //   isFormValid = false;
-    // }
+    // user password validation
+    try {
+      if (!userPass || userPass.length === 0) throw 'Please enter your password.';
+      else if (!validator.length(userPass, 8)) throw 'Password does not match requirements.';
+      else if (!validator.upperLowerCase(userPass)) throw 'Password does not match requirements.';
+      else if (!validator.numberSymbol(userPass)) throw 'Password does not match requirements.';
+      else if (!validator.alphanumeric(userPass)) throw 'Password does not match requirements.';
+      else formData.userPass = userPass;
+    } catch (error) {
+      userPassError.textContent = error;
+      userPassError.style.display = 'block';
+      isFormValid = false;
+    }
 
-    // // password confirmation validation
-    // try {
-    //   if (!passConf || passConf.length === 0) throw 'Please confirm your password.';
-    //   else if (userPass !== passConf) throw 'Passwords are not the same.';
-    //   else 
-    formData.passConf = passConf;
-    // } catch (error) {
-    //   passConfError.textContent = error;
-    //   passConfError.style.display = 'block';
-    //   isFormValid = false;
-    // }
+    // password confirmation validation
+    try {
+      if (!passConf || passConf.length === 0) throw 'Please confirm your password.';
+      else if (userPass !== passConf) throw 'Passwords are not the same.';
+      else formData.passConf = passConf;
+    } catch (error) {
+      passConfError.textContent = error;
+      passConfError.style.display = 'block';
+      isFormValid = false;
+    }
 
     return isFormValid ? formData : null;
   };
